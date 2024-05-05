@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+   <link rel="stylesheet" href="scss/main.scss">
+   <script type="module" src="./ts/app.ts"></script>
+   <title>Calculator Web App</title>
+</head>
+
+<body class="theme1">
+   <main>
+      <div class="calculator-main">
+         <div class="theme-menu">
+            <div>
+               <h1>calc</h1>
+            </div>
+            <div class="theme-controls">
+               <span>Theme</span>
+               <div>
+                  <div class="theme-numbers">
+                     <span>1</span>
+                     <span>2</span>
+                     <span>3</span>
+                  </div>
+                  <div class="theme-switcher-container">
+                     <input aria-label="Switch Theme" type="range" name="" id="hidden-range" min="0" max="2" value="0">
+                     <div class="theme__switcher-thumb"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="display">
+            <input aria-label="Calculator Display" id="display" type="text" disabled>
+         </div>
+
+         <div class="numpad">
+            <div class="number-btn" data-type="num">7</div>
+            <div class="number-btn" data-type="num">8</div>
+            <div class="number-btn" data-type="num">9</div>
+            <div class="number-btn btn--del" data-type="action">Del</div>
+
+            <div class="number-btn" data-type="num">4</div>
+            <div class="number-btn" data-type="num">5</div>
+            <div class="number-btn" data-type="num">6</div>
+            <div class="number-btn" data-type="operator">+</div>
+
+            <div class="number-btn" data-type="num">1</div>
+            <div class="number-btn" data-type="num">2</div>
+            <div class="number-btn" data-type="num">3</div>
+            <div class="number-btn" data-type="operator">-</div>
+
+            <div class="number-btn" data-type="num">.</div>
+            <div class="number-btn" data-type="num">0</div>
+            <div class="number-btn" data-type="operator">/</div>
+            <div class="number-btn" data-type="operator">x</div>
+
+            <div class="number-btn btn--reset" data-type="action">Reset</div>
+            <div class="number-btn btn--result" data-type="action">=</div>
+
+         </div>
+      </div>
+      <div class="attribution">
+         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+         Coded by <a href="https://github.com/JonathanP4" target="_blank">Jonathan Petersen</a>.
+      </div>
+   </main>
+</body>
+
+</html>
